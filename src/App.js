@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import TodoList from "./components/TodoList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="todo-app">
+      <TodoList />
+      <div className="footer">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          &copy; Copyright 2022, <span> </span>
+          <a href="https://github.com/noorkhafidzin/todo-list-reactjs">
+            Github repository
+          </a>
+          .
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
     </div>
   );
 }
